@@ -37,8 +37,9 @@ preparado para conexiones desde funciones serverless. No se debe subir una base
 local, un respaldo de CP Reparaciones ni credenciales al repositorio.
 
 1. Crea una base MySQL/MariaDB de produccion en un proveedor externo y otra
-   base separada para Preview. Usa la URL de conexion con TLS y el pooler
-   recomendado por el proveedor, si ofrece uno.
+   base separada para Preview. Usa la URL MySQL de conexion con TLS y el pooler
+   recomendado por el proveedor, si ofrece uno. `DATABASE_URL` debe empezar
+   con `mysql://`; no uses una URL `jdbc:mysql://` ni un comando de cliente.
 2. Sube el codigo a un repositorio privado de GitHub sin archivos `.env`,
    bases de datos, respaldos ni ejecutables. En Vercel, importa ese repositorio
    como proyecto Next.js y establece `main` como rama de produccion. El
