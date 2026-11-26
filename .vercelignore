@@ -1,0 +1,17 @@
+.env*
+**/.env*
+*.mdb
+*.accdb
+*.bak
+*.exe
+*.zip
+*.sqlite
+*.sqlite3
+*.db
+*.p12
+*.pfx
+*.key
+*.sql.gz
+*.dump
+CPRepair*
+**/CPRepair*
